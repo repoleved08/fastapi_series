@@ -1,0 +1,24 @@
+POST http://127.0.0.1:8000/bands
+Content-Type: application/json
+
+{
+  "name": "The Beatles",
+  "genre": "Rock",
+  "song": "Hey Jude",
+  "album": [
+    {
+      "title": "Abbey Road",
+      "release_date": "1969-09-20"
+    },
+    {
+      "title": "Let It Be",
+      "release_date": "1970-08-08"
+    }
+  ]
+}
+
+###
+GET http://127.0.0.1:8000/bands
+
+###
+GET http://127.0.0.1:8000/bands?pop
